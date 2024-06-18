@@ -1,0 +1,136 @@
+body {
+    max-width: 1300px; /* ограничение максимальной ширины сайта  */
+    margin: 0 auto;
+
+    font-family: arial, sans-serif;
+    font-size: 15px;
+}
+
+/* для всех блоков внутри body изменяем алгоритм расчета ширины блоков и добавляем по блокам поля 10px */
+body div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/*Блок структура(каркас) сайта*/
+.header {
+    background: teal;
+	height: 100px;
+}
+.content {
+    float: left;
+    width: 100%;    
+}
+/*Конец блока структуры*/
+
+/*Абзацы*/
+h1{
+    text-align: center;
+}
+
+/*Ссылки*/
+a {
+	text-decoration: none;
+	color: #d1d1d1;
+	font-weight:bold; 
+}
+a:hover{
+    text-decoration: none;
+	color: #fff;
+	transition: 0.6s;
+}
+
+/*Таблицы(Столбцы)*/
+nav ul{
+	list-style: none;
+}
+
+/*Кнопки*/
+.btns {
+	display: inline-block;
+	cursor: pointer;
+	font-size:16px;
+	text-decoration:none;
+	padding:4px 7px;
+	color:#000;
+	background:#fff;
+	border:1px solid;
+
+	
+	border-radius: 50px;
+}
+.btns:hover{
+	background: #80CBC4;
+	color:#fff;
+	border:1px solid #000;
+
+	transition: all 0.4s ease;
+
+	box-shadow: 0 2px 25px teal;
+	border-radius: 50px;
+}
+
+/*Кнопка скрина лицензии*/
+.butlicense{
+    margin: 0 auto;
+    display: block;
+}
+
+/*Блок стиля вопрос-ответа*/
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+p {
+    font-family: ‘Verdana’, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    text-indent: 30px;
+}
+/*Конец блока вопрос-ответа*/
+
+.border_yes {
+	border:2px solid;
+	background: #fcfcfc;
+}
+.border_no {border:0px;}
+	
+.input_on {display:block;}
+.input_off {display:none;}
+
+
+	#button-up {
+	display:none;
+	left: 0;
+	margin: 0;
+	position: fixed;
+	bottom: 50px;
+	outline:none;
+	width: 50px;
+	color: #fff;
+	line-height: 30px;
+	text-decoration: none;
+	padding: 0px 0px 0px 20px;
+	background: url(../img/icon-arrow-black-up.jpg) no-repeat 17.5px 10px #fff;
+	left: 93%;
+	
+	
+	box-shadow: 0 2px 4px #000;
+	-webkit-box-shadow: 0 2px 4px #000;
+	-moz-box-shadow: 0 2px 4px #000;
+	-o-box-shadow: 0 2px 4px #000;
+	
+	cursor:pointer;
+}
+
+table {
+	margin-left:28px;
+}
+
+.load {
+	margin-left:28px;
+}
